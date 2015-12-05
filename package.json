@@ -1,0 +1,19 @@
+{
+  "name": "main-menu",
+  "version": "1.0.0",
+  "description": "Desktop style main menu.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nathanial/main-menu.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathanial/main-menu/issues"
+  },
+  "homepage": "https://github.com/nathanial/main-menu#readme"
+}
