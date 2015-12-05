@@ -1,8 +1,9 @@
 {
   "name": "main-menu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Desktop style main menu.",
   "main": "build/index.js",
+  "files" : "build",
   "scripts": {
     "prepublish": "gulp dist",
     "start": "electron ."
