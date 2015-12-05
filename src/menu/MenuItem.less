@@ -1,0 +1,113 @@
+.menu-item-separator {
+  position: relative;
+  margin-left: 27px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: 1px solid #ccc;
+  margin-bottom: -1px;
+  .sep {
+    height: 1px;
+    background: #ccc;
+  }
+}
+
+.menu-bar > .menu-item > .menu-children > .menu-item {
+
+  &:hover,&.open {
+    & > .arrow-right {
+      border-left-color: white;
+    }
+  }
+
+  & > .arrow-right {
+    position: absolute;
+    right: 5px;
+    top: 6px;
+  	width: 0;
+  	height: 0;
+  	border-top: 4px solid transparent;
+  	border-bottom: 4px solid transparent;
+  	border-left: 4px solid black;
+  }
+
+  & > .menu-children {
+    position: absolute;
+    left: 198px;
+    top: -2px;
+  }
+}
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+  padding: 5px 8px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  border: 1px solid transparent;
+  margin: 1px;
+
+  & > .menu-title {
+    display: inline-block;
+  }
+  & > .menu-shortcut {
+    display: none;
+  }
+  & > .icon {
+    display: none;
+  }
+
+
+  &:hover,&.open {
+    background: #d8e9fb;
+    border: 1px solid #77a6da;
+    cursor: default;
+    outline: 1px solid white;
+    outline-offset: -2px;
+  }
+  &.open {
+    & > .menu-children {
+      display: block;
+    }
+  }
+
+  & > .menu-children {
+    position: absolute;
+    left: -1px;
+    top: 24px;
+    display: none;
+    border: 1px solid #999;
+    background: white;
+    min-width: 200px;
+    box-shadow: 5px 5px 2px -3px rgba(0,0,0,0.5);
+    //box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    & > .menu-item {
+      display: block;
+      padding: 3px 8px;
+      font-size: 12px;
+
+      & > .menu-title {
+        margin-left: 30px;
+      }
+
+      & > .menu-shortcut {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+      }
+      .icon {
+        display: block;
+        position: absolute;
+        top: -1px;
+        bottom: -2px;
+        width: 17px;
+        border-right: 1px solid #ccc;
+        & > img {
+          position: absolute;
+          left: -4px;
+          top: 3px;
+        }
+      }
+    }
+  }
+
+}
