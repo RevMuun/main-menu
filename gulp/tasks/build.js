@@ -7,7 +7,7 @@ var merge = require('merge-stream');
 gulp.task('build', function(){
   var babelConfig = {
     stage: 0,
-    optional: ['runtime'],
+    optional: [],
     sourceMaps: 'inline'
   }
   var sourcemapInit = {loadMaps: true};

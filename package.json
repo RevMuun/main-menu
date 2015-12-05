@@ -2,9 +2,12 @@
   "name": "main-menu",
   "version": "1.0.0",
   "description": "Desktop style main menu.",
-  "main": "index.js",
+  "main": "build/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scripts": {
+      "prepublish": "gulp build",
+      "start": "electron ."
+    }
   },
   "repository": {
     "type": "git",
