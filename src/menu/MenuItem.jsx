@@ -159,7 +159,7 @@ export default class MenuItem extends Component {
   }
 
   _addListeners(){
-    //document.addEventListener('click', this._onDocumentClick);
+    document.addEventListener('click', this._onDocumentClick);
   }
 
   _removeListeners(){

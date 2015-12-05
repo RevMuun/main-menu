@@ -1,6 +1,6 @@
 {
   "name": "main-menu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Desktop style main menu.",
   "main": "build/index.js",
   "files" : "build",
