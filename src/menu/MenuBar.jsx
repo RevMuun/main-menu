@@ -28,7 +28,6 @@ export default class MenuBar extends Component {
     if(this._anyIsOpen()){
       if(ReactDOM.findDOMNode(menuItem).contains(event.target) && !menuItem.isOpen()){
         this._closeAll();
-        console.log("BAM");
         menuItem.open();
       }
     }

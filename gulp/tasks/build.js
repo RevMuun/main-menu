@@ -3,6 +3,7 @@ var babel = require('gulp-babel');
 var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var merge = require('merge-stream');
+var preprocess = require('gulp-preprocess');
 
 gulp.task('build', function(){
   var babelConfig = {
@@ -14,6 +15,7 @@ gulp.task('build', function(){
   var sourcemapWrite = {};
   return merge(
     gulp.src(['src/**/*.js'])
+        .pipe(preprocess({context: { NODE_ENV: 'development', DEBUG: true}}))
         .pipe(babel(babelConfig))
         .pipe(gulp.dest('build')),
     gulp.src('src/**/*.jsx')
