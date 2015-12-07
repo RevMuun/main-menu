@@ -26,9 +26,11 @@ export default class MenuItem extends Component {
 
   constructor(){
     super(...arguments);
-    Mousetrap.bind(this.props.shortcut, () => {
-      this.props.onClick();
-    });
+    if(this.props.shortcut){
+      Mousetrap.bind(this.props.shortcut, () => {
+        this.props.onClick();
+      });      
+    }
   }
 
   render(){
