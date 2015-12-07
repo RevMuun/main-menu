@@ -167,9 +167,7 @@ export default class MenuItem extends Component {
   }
 
   _onDocumentClick(event){
-    console.log("Doc Click");
     if(this.state.open && !ReactDOM.findDOMNode(this).contains(event.target)){
-      console.log("Close");
       this._isOpen = false;
       this.setState({
         open: false
