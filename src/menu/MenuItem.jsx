@@ -2,6 +2,7 @@ import _ from 'underscore';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Component from 'react-es6-component';
+import Mousetrap from 'mousetrap';
 
 export default class MenuItem extends Component {
   static propTypes = {
@@ -22,6 +23,13 @@ export default class MenuItem extends Component {
   }
 
   _isOpen = false;
+
+  constructor(){
+    super(...arguments);
+    Mousetrap.bind(this.props.shortcut, () => {
+      this.props.onClick();
+    });
+  }
 
   render(){
     if(this.props.separator){
@@ -141,7 +149,6 @@ export default class MenuItem extends Component {
       this.setState({
         open: false
       });
-      console.log("Click", this.props.label);
       this.props.onClick();
       if(this.props.onClose){
         this.props.onClose();
