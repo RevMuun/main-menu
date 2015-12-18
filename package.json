@@ -3,7 +3,7 @@
   "version": "1.0.8",
   "description": "Desktop style main menu.",
   "main": "build/index.js",
-  "files" : "build",
+  "files": "build",
   "scripts": {
     "prepublish": "gulp dist",
     "start": "electron ."
@@ -26,6 +26,7 @@
     "gulp-less": "3.0.3",
     "gulp-preprocess": "^2.0.0",
     "gulp-sourcemaps": "1.5.2",
+    "gulp-useref": "^3.0.4",
     "gulp-util": "3.0.6",
     "gulp-watch": "4.3.4",
     "merge-stream": "^1.0.0"
