@@ -1,6 +1,6 @@
 {
   "name": "main-menu",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Desktop style main menu.",
   "main": "build/index.js",
   "files": "build",
@@ -29,12 +29,16 @@
     "gulp-useref": "^3.0.4",
     "gulp-util": "3.0.6",
     "gulp-watch": "4.3.4",
-    "merge-stream": "^1.0.0"
+    "merge-stream": "^1.0.0",
+    "react": "0.14.2",
+    "react-dom": "0.14.2"
+  },
+  "peerDependencies" : {
+    "react" : "*",
+    "react-dom" : "*"
   },
   "dependencies": {
     "mousetrap": "1.5.3",
-    "react": "0.14.2",
-    "react-dom": "0.14.2",
     "react-es6-component": "*",
     "require-dir": "0.3.0",
     "underscore": "1.8.3"
