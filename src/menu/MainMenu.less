@@ -1,0 +1,35 @@
+@border-color: #bbb;
+.menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0px solid transparent;
+  border-top: 1px solid @border-color;
+  border-bottom: 1px solid @border-color;
+  background: white;
+  color: black;
+  width: 100%;
+
+  & > .menu-item {
+    padding: 2px 8px;
+  }
+  z-index: 99999;
+
+  .menu-item {
+    position: relative;
+    z-index: 99999;
+  }
+  .menu-children {
+    top: 22px;
+    left: -1px;
+    z-index: 99999;
+  }
+
+  .menu-item-separator {
+    margin-left: 27px;
+  }
+  .menu-title {
+    position: relative;
+  }
+}
