@@ -3,14 +3,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Component from 'react-es6-component';
 import Mousetrap from 'mousetrap';
+import PropTypes from 'prop-types';
 
 export default class MenuItem extends Component {
   static propTypes = {
-    label: React.PropTypes.string,
-    separator: React.PropTypes.bool,
-    shortcut: React.PropTypes.string,
-    onClose: React.PropTypes.func,
-    onClick: React.PropTypes.func
+    label: PropTypes.string,
+    separator: PropTypes.bool,
+    shortcut: PropTypes.string,
+    onClose: PropTypes.func,
+    onClick: PropTypes.func
   }
 
   static defaultProps = {

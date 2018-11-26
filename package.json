@@ -1,7 +1,7 @@
 {
   "name": "main-menu",
   "version": "1.0.11",
-  "description": "Desktop style main menu.",
+  "description": "Desktop style main menu. This is a fork of the original repository that eliminates deprecated React.PropTypes.",
   "main": "build/index.js",
   "files": "build",
   "scripts": {
@@ -33,14 +33,15 @@
     "react": "0.14.2",
     "react-dom": "0.14.2"
   },
-  "peerDependencies" : {
-    "react" : "*",
-    "react-dom" : "*"
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
   },
   "dependencies": {
     "mousetrap": "1.5.3",
+    "prop-types": "^15.6.2",
     "react-es6-component": "*",
-    "require-dir": "0.3.0",
+    "require-dir": "^1.1.0",
     "underscore": "1.8.3"
   }
 }
